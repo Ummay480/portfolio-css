@@ -1,0 +1,80 @@
+/* Custom CSS for HomePage */
+
+/* Main page styling */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hero Section Container */
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 3rem;  /* Equivalent to px-12 */
+    padding-right: 3rem; /* Equivalent to px-12 */
+    padding-top: 1rem;   /* Equivalent to py-4 */
+    padding-bottom: 1rem; /* Equivalent to py-4 */
+  }
+  
+  /* About Section Styling */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+  }
+  
+  /* Project Section */
+  .project-section {
+    min-height: 100vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.25rem;  /* Equivalent to py-5 */
+    padding-bottom: 1.25rem;  /* Equivalent to py-5 */
+    margin-top: 2.5rem; /* Equivalent to my-10 */
+  }
+  
+  .project-section h1 {
+    font-size: 2rem; /* Equivalent to text-4xl */
+    font-weight: 800; /* Equivalent to font-extrabold */
+    background: linear-gradient(to right, #f44336, #ffeb3b); /* Gradient from red to yellow */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 3.5rem; /* Equivalent to mb-14 */
+  }
+  
+  .polygon-card-container {
+    width: 100%;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    width: 100%;
+  }
+  
+  /* Professional Skills Chart Section */
+  .professional-skills-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contact Form Section */
+  .contact-form-container {
+    margin-top: -10rem; /* Equivalent to -mt-40 */
+    width: 100%;
+  }
+  
+  /* Contacts Section */
+  .contacts-section {
+    width: 100%;
+    padding: 2rem 0;  /* Optional padding for Contacts */
+  }
+  

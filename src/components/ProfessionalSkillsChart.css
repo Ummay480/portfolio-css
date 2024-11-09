@@ -1,0 +1,99 @@
+/* Professional Skills Section */
+.professional-skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px; /* Top margin for larger screens */
+  margin-bottom: -40px; /* Adjusted for specific spacing behavior */
+  background: #121212;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .professional-skills-container {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .professional-skills-container {
+    margin-top: -52px;
+    margin-bottom: -96px;
+  }
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-text {
+  padding-top: 50px;
+  margin-top: 50px;
+  font-size: 3rem; /* Default font size */
+  font-weight: 800;
+  background-image: linear-gradient(to right, #e30000, #ffde00); /* Gradient text effect */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 640px) {
+  .title-text {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Skills Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  gap: 2rem; /* Gap between grid items */
+  max-width: 1024px;
+  margin: 0 auto; /* Center the grid */
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+  }
+}
+
+/* Neon Skill Circle */
+.neon-skill-circle {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.neon-skill-circle:hover {
+  transform: scale(1.1);
+  background-color: #e30000;
+  cursor: pointer;
+}
+
+.skill-percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Set the skill percentage text color to white */
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Single column on mobile devices */
+  }
+}

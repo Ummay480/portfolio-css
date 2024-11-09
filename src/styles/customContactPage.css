@@ -1,0 +1,45 @@
+/* Custom CSS for ContactPage */
+
+.full-width {
+    width: 100%;
+  }
+  
+  .margin-bottom-20 {
+    margin-bottom: 5rem; /* 20px equivalent in Tailwind */
+  }
+  
+  .margin-top-60 {
+    margin-top: 15rem; /* 60px equivalent in Tailwind */
+  }
+  
+  .margin-top-lg-20 {
+    margin-top: 5rem; /* 20px equivalent for large screens */
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hidden-lg {
+    display: none;
+  }
+  
+  .hidden-lg-lg-block {
+    display: block;
+  }
+  
+  @media (min-width: 1024px) {
+    .hidden-lg {
+      display: block;
+    }
+    .hidden-lg-lg-block {
+      display: none;
+    }
+  }
+  
+  .spacer-lg {
+    height: 400px;
+  }
+  

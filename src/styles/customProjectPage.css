@@ -1,0 +1,54 @@
+/* Custom CSS for ProjectPage */
+
+/* Ensure header stays at the top */
+.fixed-header {
+    position: fixed;
+    top: 3.5rem; /* Adjusted for header height (14px equivalent in Tailwind) */
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  /* Spacer to offset the header's height */
+  .header-offset {
+    padding-top: 2.5rem; /* Adjust padding to match the header's height (10px equivalent) */
+    margin-top: 18rem; /* Adjusted to offset the header's height */
+  }
+  
+  /* Title styling */
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: 800; /* Equivalent to font-extrabold */
+    background: linear-gradient(to right, #f87171, #fbbf24); /* Red to Yellow gradient */
+    color: transparent;
+    background-clip: text;
+    margin-top: 5rem; /* Equivalent to mt-20 */
+    margin-bottom: 3.5rem; /* Equivalent to mb-14 */
+  }
+  
+  .title-lg {
+    font-size: 3rem; /* Equivalent to lg:text-5xl */
+  }
+  
+  .polygon-card-wrapper {
+    margin-top: 5rem; /* Space for the PolygonCard */
+  }
+  
+  /* Centering and spacing for the Project Section */
+  .project-section-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem; /* Equivalent to mt-20 */
+    margin-top: -20rem; /* Equivalent to lg:-mt-80 for larger screens */
+  }
+  
+  /* Contacts Section */
+  .contacts-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem; /* Equivalent to mt-20 */
+    margin-bottom: 5rem; /* Equivalent to mb-20 */
+  }
+  

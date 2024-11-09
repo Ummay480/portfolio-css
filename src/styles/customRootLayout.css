@@ -1,0 +1,24 @@
+/* Custom CSS for RootLayout */
+
+/* Body styling with Inter font */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for main content */
+  .main-container {
+    max-width: 1200px; /* Equivalent to max-w-screen-lg */
+    margin: 0 auto;
+    padding-left: 2.5rem;  /* Equivalent to px-10 */
+    padding-right: 2.5rem; /* Equivalent to px-10 */
+    z-index: 10;
+  }
+  
+  /* Footer styling */
+  .footer-wrapper {
+    width: 100%;
+    margin-bottom: -1.25rem; /* Equivalent to -mb-5 */
+  }
+  

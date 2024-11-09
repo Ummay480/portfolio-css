@@ -1,0 +1,50 @@
+/* Custom CSS for AboutPage */
+
+.full-width {
+    width: 100%;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .margin-top-20 {
+    margin-top: 5rem; /* 20px equivalent in Tailwind */
+  }
+  
+  .margin-bottom-10 {
+    margin-bottom: 2.5rem; /* 10px equivalent in Tailwind */
+  }
+  
+  .margin-bottom-lg-0 {
+    margin-bottom: 0; /* For larger screens */
+  }
+  
+  .margin-x-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .hidden-lg {
+    display: none;
+  }
+  
+  .hidden-lg-lg-block {
+    display: block;
+  }
+  
+  @media (min-width: 1024px) {
+    .hidden-lg {
+      display: block;
+    }
+    .hidden-lg-lg-block {
+      display: none;
+    }
+  }
+  
+  .spacer-lg {
+    height: 400px;
+  }
+  
