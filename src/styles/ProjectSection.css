@@ -1,0 +1,120 @@
+/* Section Styling */
+.project-section {
+  padding: 2.5rem 1.25rem; /* py-10 px-5 */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* gap-6 */
+}
+
+/* Individual Project Card Styling */
+.project-card {
+  position: relative;
+  border-radius: 0.5rem; /* rounded-lg */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.project-card-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-card-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project-card-button {
+  background-color: rgba(100, 100, 100, 0.8); /* gray bg with opacity */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem; /* rounded-lg */
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.project-card-button:hover {
+  background-color: rgba(100, 100, 100, 1); /* Increase opacity on hover */
+}
+/* Section Styling */
+.project-section {
+  padding: 2.5rem 1.25rem; /* py-10 px-5 */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* gap-6 */
+}
+
+/* Individual Project Card Styling */
+.project-card {
+  position: relative;
+  border-radius: 0.5rem; /* rounded-lg */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.project-card-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-card-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project-card-button {
+  background-color: rgba(100, 100, 100, 0.8); /* gray bg with opacity */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem; /* rounded-lg */
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.project-card-button:hover {
+  background-color: rgba(100, 100, 100, 1); /* Increase opacity on hover */
+}

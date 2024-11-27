@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import styles from "./Header3.module.css"; // Import CSS module
+import styles from "../styles/Header3.module.css"; // Import CSS module
 
 const Header3: React.FC = () => {
   return (

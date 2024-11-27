@@ -1,10 +1,10 @@
+"use client";
 
-"use client"
 import React from "react";
 import Image from "next/image";
-import "./Skills.css"; // Path to your custom CSS file
-import { TypeAnimation } from "react-type-animation"; 
+import "../styles/Skills.css"; // Import the custom CSS
 
+// Define the skill logos with their direct paths
 const skills = [
   { title: "HTML", image: "/images/html-logo.svg" },
   { title: "CSS", image: "/images/css-logo.svg" },
@@ -27,41 +27,32 @@ const skills = [
 const Skills = () => {
   return (
     <section className="skills-section">
-      <div className="container">
-        <TypeAnimation
-          sequence={["Professional Skills", 1000]}
-          wrapper="h2"
-          speed={50}
-          className="title-text"
-          style={{
-            lineHeight: "1.5",
-            marginBottom: "1rem",
-          }}
-          repeat={Infinity}
-        />
-      </div>
+      <div className="skills-container">
+        <h2 className="skills-title">
+          <span className="title-text">My Skills</span>
+        </h2>
 
-        {/* Container for skill logos */}
-        <div className="skills-container">
+        <div className="skills-globe">
           {skills.map((skill, index) => (
             <div
               key={index}
               className="skill-item"
               style={{
-                transform: `rotate(${(index * 360) / skills.length}deg) translateY(-120px)`,
+                animationDelay: `${index * 0.9}s`, // Staggered effect
               }}
             >
               <Image
                 src={skill.image}
                 alt={`${skill.title} logo`}
                 className="skill-logo"
-                width={80}
-                height={80}
+                width={100}
+                height={200}
               />
+              
             </div>
           ))}
         </div>
-  
+      </div>
     </section>
   );
 };

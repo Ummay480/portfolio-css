@@ -1,0 +1,15 @@
+/* Hamburger.module.css */
+/* HamburgerButton.module.css */
+.hamburgerButton {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+  
+  .hamburgerButton.open {
+    background-color: #555;
+  }
+  

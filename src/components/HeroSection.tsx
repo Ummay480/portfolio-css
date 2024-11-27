@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import styles from "./HeroSection.module.css"; // Import CSS module
+import styles from "../styles/HeroSection.module.css"; // Import CSS module
 
 const HeroSection: React.FC = () => {
   return (

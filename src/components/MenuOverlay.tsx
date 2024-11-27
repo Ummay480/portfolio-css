@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import NavLink from "./NavLink";
-import styles from "./MenuOverlay.module.css"; // Import the CSS module
+import styles from "../styles/MenuOverlay.module.css"; // Import the CSS module
 
 interface LinkItem {
   title: string;

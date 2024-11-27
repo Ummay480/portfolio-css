@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./ContactForm.module.css"; // Import the CSS module
+import styles from "../styles/ContactForm.module.css"; // Import the CSS module
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({

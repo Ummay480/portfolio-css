@@ -1,24 +1,15 @@
-'use client';  // Ensures this component runs on the client-side
+"use client"
+import React from 'react';
+import styles from '../styles/Hamburger.module.css'; // Ensure the correct path for CSS
 
-import React, { useState } from 'react';
-import styles from './Hamburger.module.css';  // Import the CSS Module
+interface HamburgerButtonProps {
+  onClick: () => void; // Ensure `onClick` is defined as a required prop
+}
 
-const HamburgerButton: React.FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);  // TypeScript state
-
-  // Toggle the menu open/close
-  const toggleMenu = () => {
-    setIsOpen(prevState => !prevState);
-  };
-
+const HamburgerButton: React.FC<HamburgerButtonProps> = ({ onClick }) => {
   return (
-    <button
-      className={`${styles.hamburgerButton} ${isOpen ? styles.open : ''}`}  // Dynamically apply CSS classes
-      onClick={toggleMenu}  // Click handler
-      aria-expanded={isOpen ? 'true' : 'false'}
-      aria-label={isOpen ? 'Close menu' : 'Open menu'}
-    >
-      {isOpen ? 'Close' : 'Open'} Menu
+    <button className={styles.hamburgerButton} onClick={onClick}>
+      ☰ {/* Hamburger icon */}
     </button>
   );
 };

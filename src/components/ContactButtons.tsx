@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FaWhatsapp, FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
-import styles from "./ContactSection.module.css"; // Import the CSS module
+import styles from "../styles/ContactSection.module.css"; // Import the CSS module
 
 interface ContactButtonProps {
   href: string;

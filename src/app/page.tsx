@@ -1,56 +1,49 @@
 import React from "react";
-import HeroSection from "../components/HeroSection"; 
-import AboutMe from "../components/AboutSection"; 
+import HeroSection from "../components/HeroSection";
+import AboutMe from "../components/AboutSection";
 import ProjectSection from "../components/ProjectSection";
 import Skills from '../components/Skills';
 import ContactForm from '../components/ContactForm';
 import Contacts from "../components/Contacts";
-import PolygonCard from '../components/PolygonCard';
-import ProfessionalSkillsChart from "../components/ProfessionalSkillsChart";
+import ProjectCards from "../components/ProjectCards";
 
-// HomePage component
 const HomePage: React.FC = () => {
   return (
-    <main>
-      <div className="text-center">
-        {/* Hero Section */}
-        <div className="hero-container">
-          <HeroSection />
-        </div>
+    <main className="flex flex-col items-center justify-center min-h-screen bg-[#121212] overflow-x-hidden">
+      {/* Hero Section */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 py-6 mt-10">
+        <HeroSection />
+      </div>
 
-        {/* About Me Section */}
-        <div className="about-section">
-          <AboutMe />
-        </div>
+      {/* About Me Section */}
+      <div className="w-full flex items-center justify-center bg-[#121212] px-4 sm:px-6 lg:px-12 py-6">
+        <AboutMe />
+      </div>
 
-        {/* Project Section */}
-        <div className="project-section">
-          <h1>My Projects</h1>
-          <div className="polygon-card-container">
-            <PolygonCard />
-          </div>
-          <ProjectSection />
+      {/* Project Section */}
+      <div className="w-full flex flex-col items-center py-8 bg-[#121212]">
+        <h1 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-red-600 to-yellow-600 text-transparent bg-clip-text mb-8">
+          My Projects
+        </h1>
+        <ProjectSection />
+        <div className="mt-6">
+          <ProjectCards />
         </div>
+      </div>
 
-        {/* Skills Section */}
-        <div className="skills-section">
-          <Skills />
-        </div>
+      {/* Skills Section */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 mt-12">
+        <Skills />
+      </div>
 
-        {/* Professional Skills Chart */}
-        <div className="professional-skills-container">
-          <ProfessionalSkillsChart />
-        </div>
+            {/* Contact Form Section */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 py-12">
+        <ContactForm />
+      </div>
 
-        {/* Contact Us Section */}
-        <div className="contact-form-container">
-          <ContactForm />
-        </div>
-
-        {/* Contacts Section */}
-        <div className="contacts-section">
-          <Contacts />
-        </div>
+      {/* Contacts Section */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 py-12">
+        <Contacts />
       </div>
     </main>
   );

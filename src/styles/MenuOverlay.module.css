@@ -1,0 +1,22 @@
+/* MenuOverlay.module.css */
+
+.overlayContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  z-index: 30;
+}
+
+.overlayLink {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.overlayLink:hover {
+  color: #fbbf24; /* Hover color */
+}

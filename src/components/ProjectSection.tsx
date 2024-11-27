@@ -2,7 +2,7 @@
 
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import './ProjectSection.css'; // Import the CSS file
+import '../styles/ProjectSection.css';  // Import custom CSS
 
 interface Project {
   title: string;
@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "Portfolio",
     imageSrc: "/videos/portfolio.mp4",
     isVideo: true,
-    link: "https://portfolio-uq3i.vercel.app/",
+    link: "https://portfolio.example.com/",
   },
   {
     title: "Real Estate",
@@ -50,8 +50,8 @@ const projects: Project[] = [
   },
   {
     title: "Clone Sushiman",
-    imageSrc:"/images/sushiman.png",
-    isVideo:false,
+    imageSrc: "/images/sushiman.png",
+    isVideo: false,
     link: "#",
   },
   {
@@ -82,7 +82,7 @@ const projects: Project[] = [
 
 const ProjectSection: React.FC = () => {
   return (
-    <div className="project-section">
+    <section className="project-section">
       <div className="project-grid">
         {projects.map((project, index) => (
           <ProjectCard
@@ -94,7 +94,7 @@ const ProjectSection: React.FC = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

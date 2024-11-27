@@ -1,0 +1,76 @@
+/* NeonSkills.module.css */
+
+/* Main container for the skill circle */
+.neon-skill-circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 120px;
+  height: 120px;
+}
+
+@media (min-width: 640px) {
+  .neon-skill-circle {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .neon-skill-circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* SVG container */
+.neon-skill-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Background circle */
+.background-circle {
+  stroke: #333;
+}
+
+/* Neon animated circle */
+.neon-circle {
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+/* Text container */
+.neon-skill-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.skill-percentage {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .skill-percentage {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-percentage {
+    font-size: 2.5rem;
+  }
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+}

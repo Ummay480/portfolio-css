@@ -1,0 +1,85 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Light background */
+  color: #333; /* Default text color */
+}
+
+/* Skills Section Styling */
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #121212; /* Dark background for contrast */
+  padding: 2rem;
+}
+
+/* Container Styling */
+.skills-container {
+  max-width: 1200px;
+  text-align: center;
+  width: 100%;
+}
+
+.title-text {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #e30000, #ffde00);
+ 
+}
+
+@media (min-width: 768px) {
+  .title-text {
+    font-size: 3rem; /* Larger text for tablets and desktops */
+  }
+}
+
+/* Skills Grid Styling */
+.skills-globe {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between grid items */
+  justify-items: center; /* Center items horizontally within each grid cell */
+  align-items: center; /* Center items vertically within each grid cell */
+  padding-top:10px;
+  margin-top:30px;
+}
+
+/* Individual Skill Item */
+.skill-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top:10px;
+  background-color: #2d3748; /* Dark card background */
+  border-radius: 0.5rem; /* Rounded corners */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Skill Item Hover Effect */
+.skill-item:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Skill Logo */
+.skill-logo {
+  width: 100%;
+  max-width: 100px; /* Ensure logo fits within the item */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover .skill-logo {
+  transform: rotate(15deg); /* Add subtle rotation on hover */
+}

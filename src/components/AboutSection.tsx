@@ -8,7 +8,7 @@ import {
   FaCertificate,
   FaClipboardList,
 } from "react-icons/fa";
-import styles from "./AboutSection.module.css"; // Import the CSS module
+import styles from "../styles/AboutSection.module.css"; // Import the CSS module
 
 const TAB_DATA = [
   {

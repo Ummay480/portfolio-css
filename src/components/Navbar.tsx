@@ -1,11 +1,11 @@
 'use client'; // Ensure this component is rendered client-side
 
 import Link from 'next/link';
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import NavLink from './NavLink';
 import MenuOverlay from './MenuOverlay';
-import HamburgerButton from './HamburgerButton'; // Import the HamburgerButton component
-import styles from './Navbar.module.css';
+import HamburgerButton from './HamburgerButton';
+import styles from '../styles/Navbar.module.css';
 
 const navLinks = [
   { title: 'Home', path: '/' },
@@ -15,14 +15,12 @@ const navLinks = [
 ];
 
 const Navbar: React.FC = () => {
-  const [navbarOpen, setNavbarOpen] = useState<boolean>(false); // Manage state of the navbar
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
-  // Toggle navbar visibility
   const toggleNavbar = () => {
     setNavbarOpen((prevOpen) => !prevOpen);
   };
 
-  // Close navbar (for example, when a link is clicked)
   const closeNavbar = () => setNavbarOpen(false);
 
   return (
@@ -33,9 +31,9 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Mobile hamburger button */}
-        <HamburgerButton />
+        <HamburgerButton onClick={toggleNavbar} />
 
-        {/* Navigation links for desktop */}
+        {/* Desktop navigation */}
         <div className={styles.navLinks__desktop}>
           <ul className={styles.navLinks}>
             {navLinks.map((link, index) => (
@@ -47,7 +45,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Overlay menu */}
+      {/* Mobile menu overlay */}
       {navbarOpen && (
         <MenuOverlay
           links={navLinks.map((link) => ({

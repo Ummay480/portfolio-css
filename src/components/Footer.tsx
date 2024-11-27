@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./Footer.module.css"; // Import the CSS module
+import styles from "../styles/Footer.module.css"; // Import the CSS module
 
 export function Footer() {
   return (
