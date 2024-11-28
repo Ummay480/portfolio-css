@@ -2,8 +2,8 @@
 
 /* Container for the entire header */
 .headerContainer {
-  position: fixed;
-  top: 3.5rem;
+  position: relative;
+  top: 3rem;
   left: 0;
   right: 0;
   padding: 2rem 1rem; /* Adjusted for smaller screens */
@@ -39,12 +39,12 @@
 
 /* Icon styling with hover effects */
 .icon {
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
   margin-top: -0.625rem; /* Adjusted for alignment */
 }
 
 .icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Enlarges icon on hover */
 }
 
 /* Project icon centered in the container */
@@ -85,7 +85,6 @@
   margin-top: 1rem; /* Small screen margin */
   text-align: center;
 }
-
 
 /* Header title with responsive font sizes */
 .headerTitle {

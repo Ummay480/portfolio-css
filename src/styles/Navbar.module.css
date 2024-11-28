@@ -1,9 +1,8 @@
 /* Navbar.module.css */
 .navbar {
   background-color: #121212;
- 
   position: fixed;
-  padding: 2rem 6rem 0 7rem; 
+  padding: 2rem 6rem 0 7rem;
   top: 0;
   left: 0;
   right: 0;
@@ -106,6 +105,6 @@
 
   /* Show hamburger button on mobile */
   .hamburger-button {
-    display: white;
+    display: block; /* Show the button on mobile */
   }
 }

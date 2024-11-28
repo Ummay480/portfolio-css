@@ -9,6 +9,15 @@ const Header3: React.FC = () => {
       <div className={styles.iconContainer}>
         <div className={`${styles.icon} ${styles.sparkle}`}>
           <Image
+            src="/images/portfolio1.png"
+            alt="Ecommerce Icon"
+            width={100}
+            height={100}
+            className={styles.w20}
+          />
+        </div>
+        <div className={`${styles.icon} ${styles.sparkle}`}>
+          <Image
             src="/images/api3.png"
             alt="API Icon"
             width={100}
@@ -25,15 +34,7 @@ const Header3: React.FC = () => {
             className={styles.w20}
           />
         </div>
-        <div className={styles.projectIcon}>
-          <Image
-            src="/images/projects.png"
-            alt="Projects Icon"
-            width={400}
-            height={100}
-          />
-        </div>
-      </div>
+    </div>
 
       <div className={styles.glassContainer}>
         <h1 className={styles.headerTitle}>Projects</h1>
