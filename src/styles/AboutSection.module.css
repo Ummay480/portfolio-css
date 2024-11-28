@@ -3,7 +3,6 @@
 .bgDark {
   background-color: #121212;
   color: white;
-  padding:4rem;
 }
 
 .sectionContainer {
@@ -56,6 +55,7 @@
   justify-content: center;
   margin-top: 1rem;
   margin-left: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .tab {

@@ -1,14 +1,18 @@
 /* Header1.module.css */
 
+/* Header Container */
 .headerContainer {
-  position: fixed;
+  position: relative;
+  height:10rem;
   top: 0;
   left: 0;
   right: 0;
-  padding: 3rem;
-  background: linear-gradient(to bottom right, #dc2626, #f59e0b); /* Red to yellow gradient */
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #dc2626, #f59e0b); 
+  z-index: 50; /* Ensure the header stays on top */
 }
 
+/* Centered Image Container */
 .centerImageContainer {
   position: absolute;
   inset: 0;
@@ -18,29 +22,31 @@
   z-index: 10;
 }
 
+/* Lets Connect Image */
 .letsConnectImage {
   margin: 0.25rem;
-  width: 15rem;
+  width: 12rem; /* Default for small screens */
 }
 
 @media (min-width: 640px) {
   .letsConnectImage {
-    width: 25rem;
+    width: 20rem; /* Tablets */
   }
 }
 
 @media (min-width: 768px) {
   .letsConnectImage {
-    width: 31.25rem;
+    width: 28rem; /* Medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .letsConnectImage {
-    width: 37.5rem;
+    width: 36rem; /* Large screens */
   }
 }
 
+/* Icon Orbit Container */
 .iconOrbitContainer {
   position: absolute;
   inset: 0;
@@ -52,33 +58,35 @@
   border-radius: 50%;
 }
 
+/* Orbit */
 .orbit {
   position: relative;
-  width: 14rem;
-  height: 14rem;
+  width: 12rem;
+  height: 12rem; /* Small screens */
 }
 
 @media (min-width: 640px) {
   .orbit {
-    width: 18rem;
-    height: 18rem;
+    width: 16rem;
+    height: 16rem; /* Tablets */
   }
 }
 
 @media (min-width: 768px) {
   .orbit {
     width: 20rem;
-    height: 20rem;
+    height: 20rem; /* Medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .orbit {
     width: 24rem;
-    height: 24rem;
+    height: 24rem; /* Large screens */
   }
 }
 
+/* Icon */
 .icon {
   width: 2rem;
   height: 2rem;
@@ -98,10 +106,11 @@
   }
 }
 
+/* Glass Container */
 .glassContainer {
   position: relative;
   z-index: 10;
-  max-width: 16rem;
+  max-width: 90%; /* Fit smaller screens */
   width: 100%;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
@@ -109,11 +118,26 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
-  margin-top: 16rem;
-  margin-bottom: 4rem;
+  margin: auto; /* Center the container */
+  margin-top: -2rem;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .glassContainer {
+    max-width: 20rem; /* Medium screens */
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .glassContainer {
+    max-width: 24rem; /* Large screens */
+    margin-top: 18rem;
+  }
+}
+
+/* Header Title */
 .headerTitle {
   font-size: 1.25rem;
   font-weight: 600;

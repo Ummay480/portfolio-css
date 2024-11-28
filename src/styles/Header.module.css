@@ -1,14 +1,15 @@
 /* Header.module.css */
 
 .headerContainer {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
-  padding: 3rem;
-  background: linear-gradient(to bottom right, #dc2626, #f59e0b); /* Equivalent to from-red-600 to-yellow-600 */
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #dc2626, #f59e0b); /* Red to yellow gradient */
 }
 
+/* Icon Container Styles */
 .iconContainer {
   position: relative;
   display: flex;
@@ -19,9 +20,10 @@
   opacity: 0.8;
   border-radius: 50%;
   margin-top: 2.5rem;
-  gap: 2rem;
+  gap: 1.5rem; /* Adjusted for smaller screens */
 }
 
+/* Icon Hover Effects */
 .icon {
   transition: transform 0.3s;
 }
@@ -30,11 +32,21 @@
   transform: scale(1.1);
 }
 
+/* Icon Size for Different Screens */
 .educationIcon,
 .skillsIcon,
 .codeIcon,
 .certificateIcon {
-  width: 5rem; /* Adjust size for mobile */
+  width: 4rem; /* Default size for small screens */
+}
+
+@media (min-width: 640px) {
+  .educationIcon,
+  .skillsIcon,
+  .codeIcon,
+  .certificateIcon {
+    width: 5rem; /* Tablets and small devices */
+  }
 }
 
 @media (min-width: 768px) {
@@ -42,7 +54,7 @@
   .skillsIcon,
   .codeIcon,
   .certificateIcon {
-    width: 7rem; /* Adjust size for medium screens */
+    width: 6rem; /* Medium screens */
   }
 }
 
@@ -51,14 +63,15 @@
   .skillsIcon,
   .codeIcon,
   .certificateIcon {
-    width: 8rem; /* Adjust size for large screens */
+    width: 7rem; /* Large screens */
   }
 }
 
+/* Glass Container Styles */
 .glassContainer {
   position: relative;
   z-index: 30;
-  max-width: 28rem;
+  max-width: 90%; /* Ensure it fits on small screens */
   width: 100%;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
@@ -66,15 +79,29 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin: 1.5rem auto; /* Center it on small screens */
 }
 
+@media (min-width: 768px) {
+  .glassContainer {
+    max-width: 28rem;
+    margin-left: 12rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Header Title Styles */
 .headerTitle {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
   text-align: center;
+}
+
+@media (min-width: 640px) {
+  .headerTitle {
+    font-size: 1.75rem; /* Slightly larger for small devices */
+  }
 }
 
 @media (min-width: 768px) {

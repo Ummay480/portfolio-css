@@ -6,17 +6,7 @@ import styles from "../styles/Header1.module.css"; // Import CSS module
 export const Header1: React.FC = () => {
   return (
     <div className={styles.headerContainer}>
-      <div className={styles.centerImageContainer}>
-        <Image
-          src="/images/lets-connect.png"
-          alt="Let's Connect Icon"
-          width={400}
-          height={100}
-          className={styles.letsConnectImage}
-        />
-      </div>
-
-      <div className={styles.iconOrbitContainer}>
+          <div className={styles.iconOrbitContainer}>
         <div className={styles.orbit}>
           <div className={`${styles.icon} animate-orbit`}>
             <Image src="/images/WhatsApp.png" alt="WhatsApp Icon" width={40} height={40} />
