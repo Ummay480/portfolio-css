@@ -1,87 +1,107 @@
 /* Header3.module.css */
 
+/* Container for the entire header */
 .headerContainer {
   position: fixed;
   top: 3.5rem;
   left: 0;
   right: 0;
-  padding-top: 2.5rem;
-  padding-inline: 2.5rem;
+  padding: 2rem 1rem; /* Adjusted for smaller screens */
   background: linear-gradient(to bottom right, #dc2626, #f59e0b); /* Red to yellow gradient */
   z-index: 10;
 }
 
+/* Icon container with wrapping and alignment */
 .iconContainer {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
-  border-radius: 50%;
-  gap: 1rem;
+  opacity: 0.9;
+  gap: 1rem; /* Default gap for mobile */
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .iconContainer {
-    gap: 2rem;
+    gap: 1.5rem; /* Increased gap for tablets */
+    margin-top: 2rem;
   }
 }
 
+@media (min-width: 1024px) {
+  .iconContainer {
+    gap: 2rem; /* Increased gap for desktops */
+    margin-top: 3rem;
+  }
+}
+
+/* Icon styling with hover effects */
 .icon {
   transition: transform 0.3s;
-  margin-top: -0.625rem;
+  margin-top: -0.625rem; /* Adjusted for alignment */
 }
 
 .icon:hover {
   transform: scale(1.1);
 }
 
+/* Project icon centered in the container */
 .projectIcon {
   position: absolute;
   inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 6rem; /* Default margin for mobile */
+}
+
+@media (min-width: 768px) {
+  .projectIcon {
+    margin-top: 8rem; /* Adjusted for tablets */
+  }
 }
 
 @media (min-width: 1024px) {
   .projectIcon {
-    margin-top: 11rem;
+    margin-top: 10rem; /* Adjusted for desktops */
   }
 }
 
+/* Glass effect container */
 .glassContainer {
   position: relative;
-  z-index: 30;
-  max-width: 20rem;
+  z-index: 10;
+  max-width: 90%; /* Fit smaller screens */
   width: 100%;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
+  margin: auto; /* Center the container */
+  margin-top: 1rem; /* Small screen margin */
   text-align: center;
 }
 
+
+/* Header title with responsive font sizes */
 .headerTitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Default for mobile */
   font-weight: 600;
   color: white;
 }
 
 @media (min-width: 768px) {
   .headerTitle {
-    font-size: 2rem;
+    font-size: 1.75rem; /* Larger font for tablets */
   }
 }
 
 @media (min-width: 1024px) {
   .headerTitle {
-    font-size: 2.5rem;
+    font-size: 2.25rem; /* Even larger font for desktops */
   }
 }

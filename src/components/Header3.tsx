@@ -9,15 +9,6 @@ const Header3: React.FC = () => {
       <div className={styles.iconContainer}>
         <div className={`${styles.icon} ${styles.sparkle}`}>
           <Image
-            src="/images/portfolio1.png"
-            alt="Ecommerce Icon"
-            width={100}
-            height={100}
-            className={styles.w20}
-          />
-        </div>
-        <div className={`${styles.icon} ${styles.sparkle}`}>
-          <Image
             src="/images/api3.png"
             alt="API Icon"
             width={100}

@@ -3,12 +3,12 @@
 /* Header Container */
 .headerContainer {
   position: relative;
-  height:10rem;
+  height: 16rem;
   top: 0;
   left: 0;
   right: 0;
   padding: 2rem;
-  background: linear-gradient(to bottom right, #dc2626, #f59e0b); 
+  background: linear-gradient(to bottom right, #dc2626, #f59e0b);
   z-index: 50; /* Ensure the header stays on top */
 }
 
@@ -119,21 +119,27 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
   margin: auto; /* Center the container */
-  margin-top: -2rem;
+  margin-top: 1rem; /* Small screen margin */
   text-align: center;
+}
+
+@media (min-width: 640px) {
+  .glassContainer {
+    margin-top: 3rem; /* Tablet devices */
+  }
 }
 
 @media (min-width: 768px) {
   .glassContainer {
     max-width: 20rem; /* Medium screens */
-    margin-top: 0rem;
+    margin-top: 6rem; /* Adjusted for visual balance */
   }
 }
 
 @media (min-width: 1024px) {
   .glassContainer {
     max-width: 24rem; /* Large screens */
-    margin-top: 18rem;
+    margin-top: 8rem; /* Optimized for desktops */
   }
 }
 

@@ -1,0 +1,157 @@
+/* Base Styles for Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default 2 columns for mobile */
+  gap: 1.5rem; /* Adjust gap between grid items */
+  margin: 0 auto; /* Center the grid */
+  padding: 1rem;
+  width: 100%; /* Ensures it can stretch across any screen */
+  justify-items: center; /* Center the grid items horizontally */
+  align-items: center; /* Center the grid items vertically */
+}
+
+/* Styles for Larger Screens (>=640px) */
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* Styles for Larger Screens (>=1024px) */
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    gap: 2rem; /* Adjust gap between items on larger screens */
+    width: 80%; /* Ensure it's centered with some margin on larger screens */
+  }
+}
+
+/* Neon Skill Circle Styling */
+.neon-skill-circle {
+  width: 120px; /* Default size */
+  height: 120px;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.neon-skill-circle:hover {
+  transform: scale(1.1);
+  background-color: #e30000;
+  cursor: pointer;
+}
+
+/* Adjust grid layout for tablets and mobile devices (<=768px) */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    gap: 1rem; /* Adjust gap for better fitting */
+  }
+
+  .neon-skill-circle {
+    width: 100px; /* Smaller size for tablets and mobile */
+    height: 100px;
+  }
+}
+
+/* Styles for Small Devices (<=480px) */
+@media (max-width: 480px) {
+  /* Adjust grid layout for small screens */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller devices */
+    gap: 1rem; /* Adjust gap for smaller devices */
+  }
+
+  /* Adjust neon skill circle size for very small screens */
+  .neon-skill-circle {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Neon Circle Animations */
+.neon-circle {
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+/* Optional: Specific responsiveness for neon circle size (if needed) */
+@media (max-width: 768px) {
+  .neon-circle {
+    width: 90%; /* Scale neon circle down for smaller screens */
+    height: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .neon-circle {
+    width: 70%; /* Further scale down on very small screens */
+    height: 70%;
+  }
+}
+
+/* Professional Skills Section */
+.professional-skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px; /* Top margin for larger screens */
+  margin-bottom: -40px; /* Adjusted for specific spacing behavior */
+  background: #121212;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .professional-skills-container {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .professional-skills-container {
+    margin-top: -52px;
+    margin-bottom: -96px;
+  }
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-text {
+  padding-top: 50px;
+  margin-top: 50px;
+  font-size: 3rem; /* Default font size */
+  font-weight: 800;
+  background-image: linear-gradient(to right, #e30000, #ffde00); /* Gradient text effect */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 640px) {
+  .title-text {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Adjusting Neon Skill Circle */
+.skill-percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Set the skill percentage text color to white */
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
