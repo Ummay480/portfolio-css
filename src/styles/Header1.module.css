@@ -1,5 +1,3 @@
-/* Header1.module.css */
-
 /* Header Container */
 .headerContainer {
   position: relative;
@@ -166,4 +164,32 @@
   .headerTitle {
     font-size: 2.5rem;
   }
+}
+
+/* Orbit Animations */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px);
+  }
+}
+
+@keyframes reverseOrbit {
+  0% {
+    transform: rotate(0deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(50px);
+  }
+}
+
+/* Icon Orbit Animations */
+.animate-orbit {
+  animation: orbit 4s infinite linear;
+}
+
+.animate-reverse-orbit {
+  animation: reverseOrbit 4s infinite linear;
 }
