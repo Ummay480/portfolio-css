@@ -2,7 +2,8 @@
 
 .section {
   margin-top: 3rem;
-  background:#121212
+  background:#121212;
+  padding:4rem;
 }
 
 .gridContainer {
