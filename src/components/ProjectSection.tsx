@@ -20,9 +20,15 @@ const projects: Project[] = [
   },
   {
     title: "Luxe-Living",
-    imageSrc: "/videos/portfolio.mp4",
+    imageSrc: "/videos/Luxe-Living.mp4",
     isVideo: true,
     link: "https://luxe-living-amber.vercel.app/",
+  },
+  {
+    title: "Home-Appliances",
+    imageSrc: "/videos/home-appliances.mp4",
+    isVideo: true,
+    link: "https://home-appliances-flame.vercel.app/",
   },
   {
     title: "Real Estate",
