@@ -19,6 +19,12 @@ const projects: Project[] = [
     link: "https://portfolio.example.com/",
   },
   {
+    title: "Luxe-Living",
+    imageSrc: "/videos/portfolio.mp4",
+    isVideo: true,
+    link: "https://luxe-living-amber.vercel.app/",
+  },
+  {
     title: "Real Estate",
     imageSrc: "/videos/real-estate.mp4",
     isVideo: true,
